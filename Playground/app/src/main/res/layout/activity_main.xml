@@ -14,9 +14,9 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="36dp"
+        android:background="@drawable/custom_button"
         android:text="Make String"
         android:textColor="@color/white"
-        android:background="@drawable/custom_button"
         app:layout_constraintBottom_toTopOf="@+id/Print"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -34,13 +34,51 @@
         app:layout_constraintTop_toBottomOf="@+id/MakeString" />
 
     <Button
-        android:id="@+id/play"
-        android:layout_width="100dp"
+        android:id="@+id/playbutton"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="170dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="85dp"
+        android:background="@drawable/custom_button"
         android:text="Play"
         android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/stopbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/MakeString"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/stopbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="80dp"
         android:background="@drawable/custom_button"
-        tools:layout_editor_absoluteX="254dp"
-        tools:layout_editor_absoluteY="38dp" />
+        android:text="Stop"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/restartbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Print"
+        app:layout_constraintTop_toBottomOf="@+id/playbutton" />
+
+    <Button
+        android:id="@+id/restartbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="274dp"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginBottom="384dp"
+        android:background="@drawable/custom_button"
+        android:text="Restart"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopbutton" />
 
 </android.support.constraint.ConstraintLayout>

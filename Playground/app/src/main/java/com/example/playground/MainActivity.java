@@ -6,10 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,12 +24,50 @@ public class MainActivity extends AppCompatActivity {
         //buttons
         Button button1 = findViewById(R.id.MakeString);
         Button button2 = findViewById(R.id.Print);
-        Button button3 = findViewById(R.id.play);
+        Button play = findViewById(R.id.playbutton);
+        Button stop = findViewById(R.id.stopbutton);
+        Button restart = findViewById(R.id.restartbutton);
+
         //Variables
         final String[] text = new String[1];
         final int[] mLastX = new int[1];
         final int[] mLastY = new int[1];
 
+        //get initial position
+        ViewGroup.MarginLayoutParams params1 = (ViewGroup.MarginLayoutParams) button1.getLayoutParams();
+        ViewGroup.MarginLayoutParams params2 = (ViewGroup.MarginLayoutParams) button2.getLayoutParams();
+
+        // initial states
+        button1.setEnabled(false);
+        button2.setEnabled(false);
+
+
+        //handle case where restart is pressed and buttons comeback to their initial state and position
+        play.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button1.setEnabled(true);
+                button2.setEnabled(true);
+            }
+        });
+        stop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button1.setEnabled(false);
+                button2.setEnabled(false);
+            }
+        });
+        restart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button1.setEnabled(false);
+                button2.setEnabled(false);
+
+                button1.setLayoutParams(params1);
+                button2.setLayoutParams(params2);
+
+            }
+        });
         button1.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View view, MotionEvent motionEvent) {
@@ -129,13 +170,6 @@ public class MainActivity extends AppCompatActivity {
                         .show();
             }
         });
-        button3.setOnClickListener(new View.OnClickListener() {
-                                       @Override
-                                       public void onClick(View v) {
-
-                                       }
-                                   }
-        );
     }
 
 }
