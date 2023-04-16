@@ -15,7 +15,7 @@
         android:layout_marginTop="40dp"
         android:layout_marginBottom="36dp"
         android:background="@drawable/custom_button"
-        android:text="Make String"
+        android:text="Make Note"
         android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/Print"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,11 +27,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="80dp"
-        android:text="Print String"
+        android:text="Print Note"
         android:textColor="@color/white"
         android:background="@drawable/custom_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MakeString" />
+
 
     <Button
         android:id="@+id/playbutton"
@@ -80,5 +81,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/stopbutton" />
+
+    <Button
+        android:id="@+id/playnote"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="103dp"
+        android:layout_marginBottom="364dp"
+        android:background="@drawable/custom_button"
+        android:text="Play Note"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Print" />
 
 </android.support.constraint.ConstraintLayout>
