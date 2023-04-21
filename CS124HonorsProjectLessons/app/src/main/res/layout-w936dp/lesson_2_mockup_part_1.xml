@@ -87,8 +87,8 @@
 
             <EditText
                 android:id="@+id/Content_Cont2"
-                android:layout_width="359dp"
-                android:layout_height="248dp"
+                android:layout_width="350dp"
+                android:layout_height="235dp"
                 android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
@@ -97,7 +97,7 @@
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.576"
+                app:layout_constraintHorizontal_bias="0.606"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Content_Cont"
                 app:layout_constraintVertical_bias="0.0" />
@@ -114,26 +114,46 @@
                 android:text="Lesson 2: Conditionals"
                 android:textAlignment="center"
                 android:textSize="35sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toTopOf="@+id/Content"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.785"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.466" />
 
             <ScrollView
                 android:layout_width="21dp"
                 android:layout_height="358dp"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginBottom="61dp"
                 app:layout_constraintBottom_toTopOf="@+id/Content_Cont2"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/Content"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.315">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical" />
             </ScrollView>
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                tools:layout_editor_absoluteX="380dp"
+                tools:layout_editor_absoluteY="16dp" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="27dp"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="16dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

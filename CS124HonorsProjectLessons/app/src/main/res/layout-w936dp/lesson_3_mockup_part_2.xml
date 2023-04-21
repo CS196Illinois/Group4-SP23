@@ -87,8 +87,8 @@
 
             <EditText
                 android:id="@+id/Content_Cont2"
-                android:layout_width="358dp"
-                android:layout_height="234dp"
+                android:layout_width="344dp"
+                android:layout_height="227dp"
                 android:ems="10"
                 android:gravity="start|top"
                 android:inputType="textMultiLine"
@@ -97,7 +97,7 @@
                 android:textSize="20sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.788"
+                app:layout_constraintHorizontal_bias="0.626"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/Content_Cont"
                 app:layout_constraintVertical_bias="0.0" />
