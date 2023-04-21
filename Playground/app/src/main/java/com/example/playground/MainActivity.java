@@ -11,6 +11,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+import android.media.MediaPlayer;
 
 
 
@@ -48,7 +49,6 @@ public class MainActivity extends AppCompatActivity {
         playnote.setEnabled(false);
 
         //Initialization for the note
-        final HelloMusic[] myNote = {new HelloMusic("")};
 
 
         //handle case where restart is pressed and buttons comeback to their initial state and position
@@ -134,7 +134,7 @@ public class MainActivity extends AppCompatActivity {
                             }
                         })
                         .show();
-                myNote[0] = new HelloMusic(input.getText().toString().trim());
+
             }
         });
         button2.setOnTouchListener(new View.OnTouchListener() {
@@ -186,18 +186,57 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //functionality for play note button
-        /** playnote.setOnClickListener(new View.OnClickListener() {
+        playnote.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //search through mp3 files
+                String input = text[0].toLowerCase();
+                int resId = getResources().getIdentifier(input, "raw", getPackageName());
                 //Play note
-                Player player = new Player();
-                try {
-                    player.play(myNote[0].makeWhole(myNote[0].getNote()));
-                } catch (MidiUnavailableException e) {
-                    throw new RuntimeException(e);
+                if (resId != 0) {
+                    MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, resId);
+                    mediaPlayer.start();
+                } else {
+                    Toast.makeText(MainActivity.this, "File not found", Toast.LENGTH_SHORT).show();
                 }
             }
-        }); */
+        });
+
+        // Make button dragable
+        playnote.setOnTouchListener(new View.OnTouchListener() {
+
+            @Override
+            public boolean onTouch(View view, MotionEvent motionEvent) {
+                int x = (int) motionEvent.getRawX();
+                int y = (int) motionEvent.getRawY();
+
+                switch (motionEvent.getAction() & MotionEvent.ACTION_MASK) {
+                    case MotionEvent.ACTION_DOWN:
+                        mLastX[0] = x;
+                        mLastY[0] = y;
+                        break;
+                    case MotionEvent.ACTION_MOVE:
+                        int dx = x - mLastX[0];
+                        int dy = y - mLastY[0];
+
+                        int newX = view.getLeft() + dx;
+                        int newY = view.getTop() + dy;
+
+                        view.layout(newX, newY, newX + view.getWidth(), newY + view.getHeight());
+
+                        mLastX[0] = x;
+                        mLastY[0] = y;
+                        break;
+                    case MotionEvent.ACTION_UP:
+                        // Handle button release
+                        view.performClick(); // Manually trigger onClick()
+                        break;
+                }
+                return true;
+            }
+        });
+
+
     }
 
 }
