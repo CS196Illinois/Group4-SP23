@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:collapseColumns="0"
+android:textAlignment="center">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="192dp"
+            android:background="#591ACA"
+            android:backgroundTint="#5D0AEF" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="452dp"
+            android:layout_height="135dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Congrats on completing your first lesson on variables! In this lesson, we'll begin learning about a way to test two conditions win one statement. "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:translationX="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="452dp"
+            android:layout_height="174dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="A conditional statement tells a program to do an action based on whether it is true or false. Conditional statements are important because they help coders make decisions based on the situation. "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:translationX="30dp" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="450dp"
+            android:layout_height="158dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="In music, you can add different parts of a song together only if they are in the same key. You can do the same in coding! In coding, if two conditions are true, then the if block can be executed. "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:translationX="30dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="448dp"
+            android:layout_height="137dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Like how two conditions are true, the block will be executed, the same happens in music. If two lines of music are within the same key, they can be executed!"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:translationX="30dp" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:background="#03A9F4"
+            android:backgroundTint="#9C7E26" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="92dp"
+            android:text="Now, we are going to learn about arrays. Arrays are containers that hold a fixed number of values of a single type. "
+            android:textAlignment="center"
+            android:textSize="20dp" />
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="486dp"
+            android:layout_height="127dp"
+            android:text="For example, if we want to store the names of 100 songs, then we would create an array with a string type that can store 100 songs. "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="String[] array = newString[100]"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="51dp"
+            android:text="Here, the array cannot store more than 100 songs. "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="Another way of thinking about an array is a piano set up, where each key plays a different note, arrays contain specified values in each place. "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="151dp"
+            android:text="We use the type of variable that the array can hold, followed by [], to show that we are creating a new array. For example, if we want to represent a piano, we could use String[] Piano = {“C”, “D”, “E”, “F”, “G”, “A”, “B”}. "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="209dp"
+            android:text="Each value of the given array can be accessed using the following syntax: Piano[0], where we use the variable name (Piano) and the index, or position, in the array that we want to access. In this case, Piano[0] accesses note C, and we can think of this as playing C on this piano. "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Each value can also be reassigned to change: Piano[0] = “D” ====> plays note D "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:background="#3E89C5" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="LOOPS!"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="match_parent"
+            android:layout_height="159dp"
+            android:text="There are two different types of loops: while and for loops:  while loops use the keyword “while” ;for loops use the keyword “for”; Both types of loops require that a particular conditional expression be met before they can run again."
+            android:textAlignment="center"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:text="If the condition is false, then we exit the loop and move on. Similarly, in music, when we reach the repeat, we check to see whether or not we have already played that passage of music. If we have, then we move on. Otherwise, we repeat that section. "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:text="Loops can run infinitely if we aren’t careful! We need to ensure that the condition is eventually false. Otherwise, the loop will be infinite, and we don’t want to be stuck in the loop forever. In music, for instance, we don’t want to be playing the same measures over and over again. That’s why it is important that we ensure the condition will be false at some point."
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+    </resources>
