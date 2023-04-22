@@ -1,7 +1,9 @@
 package com.example.playground;
 
 import android.content.DialogInterface;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MotionEvent;
@@ -11,7 +13,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.media.MediaPlayer;
 
 
 
@@ -47,9 +48,6 @@ public class MainActivity extends AppCompatActivity {
         button1.setEnabled(false);
         button2.setEnabled(false);
         playnote.setEnabled(false);
-
-        //Initialization for the note
-
 
         //handle case where restart is pressed and buttons comeback to their initial state and position
         play.setOnClickListener(
@@ -190,18 +188,34 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //search through mp3 files
-                String input = text[0].toLowerCase();
-                int resId = getResources().getIdentifier(input, "raw", getPackageName());
-                //Play note
-                if (resId != 0) {
-                    MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, resId);
-                    mediaPlayer.start();
-                } else {
-                    Toast.makeText(MainActivity.this, "File not found", Toast.LENGTH_SHORT).show();
+                String input = text[0].toLowerCase().trim();
+                //split the input into notes
+                String[] notes = input.split(" ");
+                //look for the files in the raw files
+                for (int i = 0; i < notes.length; i++) {
+
+                    int finalI = i;
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            int resId = getResources().getIdentifier(notes[finalI], "raw", getPackageName());
+                            //Play note
+                            if (resId != 0) {
+                                MediaPlayer mediaPlayer = MediaPlayer.create(MainActivity.this, resId);
+                                mediaPlayer.start();
+                                try {
+                                    Thread.sleep(5000);
+                                } catch (InterruptedException e) {
+                                    throw new RuntimeException(e);
+                                }
+                            } else {
+                                Toast.makeText(MainActivity.this, "File not found", Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    }, 500);
                 }
             }
         });
-
         // Make button dragable
         playnote.setOnTouchListener(new View.OnTouchListener() {
 
@@ -235,7 +249,7 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
         });
-
+        // loop button
 
     }
 
