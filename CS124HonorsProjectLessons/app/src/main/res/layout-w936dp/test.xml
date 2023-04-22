@@ -1,0 +1,107 @@
++<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:collapseColumns="0">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:background="#591ACA"
+            android:backgroundTint="#5D0AEF" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:background="#5A0BE6"
+            android:backgroundTint="#560BDC"
+            app:srcCompat="@android:drawable/ic_media_pause" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="350dp"
+            android:layout_height="135dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Congrats on completing your first lesson on variables! In this lesson, we'll begin learning about a way to test two conditions win one statement. "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:translationX="30dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="350dp"
+            android:layout_height="174dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="A conditional statement tells a program to do an action based on whether it is true or false. Conditional statements are important because they help coders make decisions based on the situation. "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:translationX="30dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="350dp"
+            android:layout_height="158dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="In music, you can add different parts of a song together only if they are in the same key. You can do the same in coding! In coding, if two conditions are true, then the if block can be executed. "
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:translationX="30dp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="350dp"
+            android:layout_height="137dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Like how two conditions are true, the block will be executed, the same happens in music. If two lines of music are within the same key, they can be executed!"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:translationX="30dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</LinearLayout>
+    </ScrollView>
+
+<TableRow
+android:layout_width="match_parent"
+android:layout_height="238dp">
+
+<TextView
+    android:id="@+id/textView9"
+    android:layout_width="965dp"
+    android:layout_height="208dp"
+    android:text="A variable is a way in which we can store data in the computer. This is important because we want to be able to use and/or modify such data at a later time. In order to be able to store different types of data, we use different types of variables. For instance, if we want to store the number 1 in a variable, we must store it in an int variable."
+    android:textSize="30sp" />
+
+</TableRow>
+
+<TextView
+android:id="@+id/textView8"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_weight="1" />
+
+    </LinearLayout>
+<
