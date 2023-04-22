@@ -26,7 +26,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbars
+                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,7 +53,7 @@
                 android:layout_marginTop="76dp"
                 android:layout_marginEnd="65dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:text="One more important thing to note about arrays is that the index will begin with 0, which may seem unusual since we usually think of starting at 1. However, computer scientists decided on beginning at an index of 0, not just for arrays, but also for many other types of data!"
                 android:textAlignment="center"
@@ -71,7 +71,7 @@
                 android:layout_marginEnd="65dp"
                 android:layout_marginBottom="20dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:singleLine="false"
                 android:text="This means that the second value of an array is at index 1, the third value is at index 2, etc. This also means that the last index of the array would be the length of the array minus 1. In our Piano variable, for instance, the last index would 6. "

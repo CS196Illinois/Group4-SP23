@@ -26,7 +26,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbars
+                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,7 +53,7 @@
                 android:layout_marginTop="148dp"
                 android:layout_marginEnd="65dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:text="We hope you enjoyed learning about conditionals in the last lesson! In this one, we'll discuss arrays and how they work."
                 android:textAlignment="center"
@@ -71,7 +71,7 @@
                 android:layout_marginEnd="65dp"
                 android:layout_marginBottom="20dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:singleLine="false"
                 android:text="Arrays are like a list of specified elements, where each value can be changed or accessed. Similar to a piano set up, where each key &quot;contains&quot; a different note, arrays contain specified values in each place."
@@ -131,7 +131,8 @@
                 android:layout_height="36dp"
                 app:srcCompat="@android:drawable/btn_star_big_on"
                 tools:layout_editor_absoluteX="357dp"
-                tools:layout_editor_absoluteY="18dp" />
+                tools:layout_editor_absoluteY="18dp"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -139,7 +140,8 @@
                 android:layout_height="36dp"
                 app:srcCompat="@android:drawable/btn_star_big_on"
                 tools:layout_editor_absoluteX="8dp"
-                tools:layout_editor_absoluteY="18dp" />
+                tools:layout_editor_absoluteY="18dp"
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -26,7 +26,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbars
+                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,7 +53,7 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="65dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:text="We use the type of variable that the array can hold, followed by [], to show that we are creating a new array. For example, if we want to represent a piano, we could use String[] Piano = {“C”, “D”, “E”, “F”, “G”, “A”, “B”}."
                 android:textAlignment="center"
@@ -71,7 +71,7 @@
                 android:layout_marginEnd="65dp"
                 android:layout_marginBottom="20dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:singleLine="false"
                 android:text="Each value of the given array can be accessed using the following syntax: Piano[0], where we use the variable name (Piano) and the index, or position, in the array that we want to access. In this case, Piano[0] accesses note C, and we can think of this as playing C on this piano."

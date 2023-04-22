@@ -26,7 +26,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbars
+                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,7 +53,7 @@
                 android:layout_marginTop="4dp"
                 android:layout_marginEnd="65dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:text="There are two more operators that may look a little different: == and !=. == is known as the equality operator. It tests to see if the two values are equal to each other and returns true if they are. != is the opposite. It tests to see if the two values are NOT equal to each other and returns true if they are unequal. "
                 android:textAlignment="center"
@@ -71,7 +71,7 @@
                 android:layout_marginEnd="65dp"
                 android:layout_marginBottom="20dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:singleLine="false"
                 android:text="Conditional expressions can be used in something called if statements. These are statements with the keyword “if” followed by the conditional. These conditional statements allow us to run different sections of code based on particular conditions. We only execute anything within that if statement if the condition is true. Otherwise, we skip over that section of code."
@@ -89,7 +89,7 @@
                 android:layout_width="354dp"
                 android:layout_height="170dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:text="In music, for instance, if we see a rest, then we don’t play. We make a decision based on the music, and this is similar to coding: the computer makes a decision based on the condition."
                 android:textAlignment="center"

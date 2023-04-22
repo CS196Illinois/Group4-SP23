@@ -26,7 +26,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbars
+                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,7 +53,7 @@
                 android:layout_marginTop="72dp"
                 android:layout_marginEnd="65dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:text="Next we'll learn about loops! Loops are blocks of code that will repeat a given number of times. We can think of them as repeats in music. "
                 android:textAlignment="center"
@@ -71,7 +71,7 @@
                 android:layout_marginEnd="65dp"
                 android:layout_marginBottom="20dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:singleLine="false"
                 android:text="There are two different types of loops: while loops and for loops. while loops use the word &quot;while&quot;, and for loops use the word &quot;for&quot;. Both types of loops require that a particular conditional expression be met before they can run again."
@@ -146,7 +146,8 @@
                 android:layout_height="41dp"
                 app:srcCompat="@android:drawable/btn_star_big_on"
                 tools:layout_editor_absoluteX="345dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView8"
@@ -154,7 +155,8 @@
                 android:layout_height="41dp"
                 app:srcCompat="@android:drawable/btn_star_big_on"
                 tools:layout_editor_absoluteX="16dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

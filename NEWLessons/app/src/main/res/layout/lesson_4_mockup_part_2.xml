@@ -26,7 +26,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbars
+                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,7 +53,7 @@
                 android:layout_marginTop="44dp"
                 android:layout_marginEnd="65dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:text="Loops can run infinitely if we aren’t careful! We need to ensure that the condition is eventually false. Otherwise, the loop will be infinite, and we don’t want to be stuck in the loop forever. In music, for instance, we don’t want to be playing the same measures over and over again. That’s why it is important that we ensure the condition will be false at some point."
                 android:textAlignment="center"
@@ -71,7 +71,7 @@
                 android:layout_marginEnd="65dp"
                 android:layout_marginBottom="20dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:singleLine="false"
                 android:text="Why do we use loops? Well, if we think back to our previous lesson on arrays, we can use loops to run through each element of an array! In our Piano array example, we could set up a loop so that the program plays each note of the piano in order. Overall, loops are generally useful for repeating a section of code without having to copy and paste it multiple times!"

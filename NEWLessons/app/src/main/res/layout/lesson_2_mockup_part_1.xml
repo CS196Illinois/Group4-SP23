@@ -26,7 +26,7 @@
             <androidx.appcompat.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_height="?attr/actionBarSize"
-                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbars
+                android:layout_width="match_parent"></androidx.appcompat.widget.Toolbar>
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -53,7 +53,7 @@
                 android:layout_marginTop="56dp"
                 android:layout_marginEnd="65dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:text="Congratulations on completing your first lesson on variables! In this lesson, we'll begin learning about a way to test two conditions with one statement."
                 android:textAlignment="center"
@@ -71,7 +71,7 @@
                 android:layout_marginEnd="65dp"
                 android:layout_marginBottom="20dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:singleLine="false"
                 android:text="A conditional statement tells a program to do an action based on whether a CONDITION is true or false. True and false are values known as booleans! Whether a statement is true or false is important because programs are able to make decisions based on the situation."
@@ -90,7 +90,7 @@
                 android:layout_width="350dp"
                 android:layout_height="235dp"
                 android:ems="10"
-                android:gravity="start|top"
+                android:gravity="center_horizontal"
                 android:inputType="textMultiLine"
                 android:text="Some conditional operations, which you may already be familiar with, are <, <=, >, and >=. Just like in math, these symbols refer to less than, less than or equal to, greater than, and greater than or equal to. If something is less than something else, greater than something else, etc., then true will be returned."
                 android:textAlignment="center"
@@ -145,7 +145,8 @@
                 android:layout_height="27dp"
                 app:srcCompat="@android:drawable/btn_star_big_on"
                 tools:layout_editor_absoluteX="380dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="MissingConstraints" />
 
             <ImageView
                 android:id="@+id/imageView5"
@@ -153,7 +154,8 @@
                 android:layout_height="27dp"
                 app:srcCompat="@android:drawable/btn_star_big_on"
                 tools:layout_editor_absoluteX="0dp"
-                tools:layout_editor_absoluteY="16dp" />
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="MissingConstraints" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
